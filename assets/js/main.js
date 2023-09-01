@@ -1,10 +1,9 @@
 const generateBtn = document.getElementById("generateBtn");
+const resetBtn = document.getElementById("resetBtn");
 const fieldElement = document.querySelector(".field");
 const limit = 100;
 
 console.log(generateBtn);
-
-generateBtn.innerHTML = "Casa"
 
 function generateMineField(domElement, limit) {
 
@@ -41,8 +40,6 @@ function removeMineField(limit) {
 
     }
 
-    console.log(fieldElement);
-
 }
 
 generateBtn.addEventListener("click", function () {
@@ -52,12 +49,29 @@ generateBtn.addEventListener("click", function () {
 
     if (generateBtn.classList.contains("active")) {
 
+        generateBtn.innerHTML = "Delete the field";
+
         generateMineField(fieldElement, limit);
 
     } else {
+
+        generateBtn.innerHTML = "Generate the field";
 
         removeMineField(limit);
 
     }
 
 });
+
+resetBtn.addEventListener("click", function () {
+
+    if (generateBtn.classList.contains("active")) {
+        console.log("resetting the field");
+
+        removeMineField(limit);
+
+        generateMineField(fieldElement, limit);
+    }
+
+});
+
