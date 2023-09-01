@@ -11,47 +11,37 @@
             integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
             crossorigin="anonymous">
 
+        <link rel="stylesheet" href="./assets/css/style.css">
+
     </head>
     <body>
 
-        <style>
+        <div class="container mt-4">
 
-            * {
-                box-sizing: border-box;
-                margin: 0;
-                padding: 0;
-            }
+            <div class="card">
 
-            button {
-                width: 10rem;
-            }
+                <div class="card-header text-center fw-bold h3">
+                    Mine Field (Grid)
+                </div>
 
-            .field {
-                display: flex;
-                flex-wrap: wrap;
-                width: 80%;
-                margin: 3rem auto;
-            }
+                <div class="card-body">
 
-            .cell {
-                border: 1px solid black;
-                width: calc(100% / 10);
-                aspect-ratio:  1/1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .bgGreen {
-                background-color: palegreen;
-            }
+                    <div class="d-flex justify-content-center my-1">
 
-        </style>
+                        <button id="generateBtn" class="btn btn-success">Generate
+                            The Field</button>
 
-        <button id="generateBtn" class="btn btn-success">Generate The Field</button>
+                        <button id="resetBtn" class="btn btn-danger">Reset Field</button>
 
-        <button id="resetBtn" class="btn btn-danger">Reset Field</button>
+                    </div>
 
-        <div class="field">
+                </div>
+
+            </div>
+
+            <div class="field">
+
+            </div>
 
         </div>
 
