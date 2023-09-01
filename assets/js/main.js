@@ -6,7 +6,9 @@ console.log(generateBtn);
 
 generateBtn.innerHTML = "Casa"
 
-function generateFieldExercise(domElement, limit) {
+function generateMineField(domElement, limit) {
+
+    console.log("generating cells");
 
     for (let i = 0; i < limit; i++) {
 
@@ -28,7 +30,20 @@ function generateFieldExercise(domElement, limit) {
     }
 };
 
-generateFieldExercise(fieldElement, limit);
+function removeMineField(limit) {
+
+    console.log("removing cells");
+
+    for (let i = 0; i < limit; i++) {
+
+        const cells = document.querySelector(".cell");
+        cells.remove();
+
+    }
+
+    console.log(fieldElement);
+
+}
 
 generateBtn.addEventListener("click", function () {
 
@@ -36,9 +51,13 @@ generateBtn.addEventListener("click", function () {
     console.log(generateBtn);
 
     if (generateBtn.classList.contains("active")) {
-        console.log("active");
+
+        generateMineField(fieldElement, limit);
+
     } else {
-        console.log("absent");
+
+        removeMineField(limit);
+
     }
 
 });
