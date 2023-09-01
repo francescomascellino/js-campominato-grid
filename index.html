@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Campo Minato Grid</title>
+    </head>
+    <body>
+
+        <style>
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            .field {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80%;
+                margin: 3rem auto;
+            }
+
+            .cell {
+                border: 1px solid black;
+                width: calc(100% / 10);
+                aspect-ratio:  1/1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .bgGreen {
+                background-color: palegreen;
+            }
+
+        </style>
+
+        <button id="generateBtn" class>Generate Field</button>
+
+        <div class="field">
+
+        </div>
+
+        <script type="text/javascript" src="./assets/js/main.js"></script>
+    </body>
+</html>
