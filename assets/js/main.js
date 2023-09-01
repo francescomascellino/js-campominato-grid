@@ -67,7 +67,7 @@ generateBtn.addEventListener("click", function () {
     if (generateBtn.classList.contains("active")) {
 
         //changes the button inner text
-        generateBtn.innerHTML = "Delete the field";
+        generateBtn.innerHTML = "Delete the Field";
 
         //generates the cells inside the .field
         generateMineField(fieldElement, limit);
@@ -76,7 +76,7 @@ generateBtn.addEventListener("click", function () {
     } else {
 
         //changes the button inner text
-        generateBtn.innerHTML = "Generate the field";
+        generateBtn.innerHTML = "Generate the Field";
 
         //removes the cells from the .field
         removeMineField(limit);
