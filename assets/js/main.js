@@ -31,7 +31,6 @@ function generateMineField(domElement, limit) {
             //this fa rifermento al "soggetto" dell'eventListener
             this.classList.toggle("bgGreen");
             console.log(cellValue);
-            cellElement.innerHTML = "";
 
         })
 
