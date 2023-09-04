@@ -45,14 +45,16 @@ function removeMineField(limit) {
 
     console.log("removing cells");
 
-    for (let i = 0; i < limit; i++) {
+    /*     for (let i = 0; i < limit; i++) {
+    
+            // Select the first element with class "cell"
+            const cells = document.querySelector(".cell");
+            //remove the selected element from the dom
+            cells.remove();
+    
+        } */
 
-        // Select the first element with class "cell"
-        const cells = document.querySelector(".cell");
-        //remove the selected element from the dom
-        cells.remove();
-
-    }
+    fieldElement.innerHTML = "";
 
 }
 
